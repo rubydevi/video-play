@@ -24,6 +24,11 @@ body{
 
 li {
     padding: 10px;
+    /* width: 30%; */
+}
+
+.mid-li{
+    width: 30%;
 }
 
 a {
@@ -40,6 +45,13 @@ a {
   top: 0;
   width: 100%;
   z-index: 1;
+}
+
+.txt-search{
+    border-radius: 20px;
+    padding: 10px 10px;
+    border-color: #e0d5d53a;
+    width: 100%;
 }
 
 
@@ -139,6 +151,10 @@ a {
 .related-video-views {
     font-size: 1rem;
     color: #888;
+}
+
+.thumbnail-images{
+    border-radius: 10px;
 }
 
 @media only screen and (max-width: 800px) {
