@@ -4,30 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>YouTube Replica</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div>
         <section>
-            <nav>
-                <ul>
+            <nav class="sticky">
+                <ul class="main-nav">
                     <li>
-                        Home
-                    </li>
-                    <li>
-                        About
+                        <a href=""> 
+                            <img class="img-logo" src="https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500" alt="YouTube Logo" />
+                        </a>
                     </li>
                 </ul>
             </nav>
-        </section>
+            <div id="center">
 
-        <section>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/QxDGET1nb44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </section>
-        
+
+        <section class="main-video">
+            <div class="video-container">
+                <iframe width="700" height="393.75" src="https://www.youtube.com/embed/QxDGET1nb44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h1 class="video-title">Hiking With Dogs | Manipur Dogs | Yi4k - 2019</h1>
+                <div class="video-stats">
+                  <p class="video-views">11,238 views</p>
+                  <p class="video-likes">1,024 likes</p>
+                  <p class="video-dislikes">14 dislikes</p>
+                </div>
+                <div class="video-description">
+                  <p>Learn how to build a basic YouTube replica with HTML and CSS. In this tutorial, we will cover the main components of the YouTube interface, including the header, search bar, video list, and footer.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="other-videos">
+            <h2>Videos You May Also Like</h2>
+        </section>
     </div>
 </body>
 </html>

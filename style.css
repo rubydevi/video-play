@@ -1,7 +1,99 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+html{
+    font-size: 10px;
+    font-family: Roboto, Arial, sans-serif;
+}
+
 body{
     margin: 0 auto;
 }
 
-li{
+.main-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 1em;
+}
+
+li {
+    padding: 20px;
+}
+
+a {
+    /* color: #f5f5f6; */
     text-decoration: none;
 }
+
+.img-logo{
+    width: 20%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.main-video{
+    padding: 80px 100px;
+    width: 80%;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.video-info {
+    padding: 1rem;
+}
+.video-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.video-stats {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.video-stats p {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+.video-description {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+    .main-video {
+        padding: 70px 30px;
+        width: 100%;
+    }
+    .video-title {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* @media only screen and (max-width: 600px) {
+    
+} */
