@@ -19,10 +19,11 @@ body{
     list-style: none;
     margin: 0;
     font-size: 1em;
+    background-color: #fff;
 }
 
 li {
-    padding: 20px;
+    padding: 10px;
 }
 
 a {
@@ -38,11 +39,19 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
+
+
+/* 
+        MAIN VIDEO STYLES 
+*/
 
 .main-video{
     padding: 80px 100px;
     width: 80%;
+    float: left; 
+    z-index: 0;
 }
 
 .video-container {
@@ -78,6 +87,59 @@ a {
     line-height: 1.5;
 }
 
+/* 
+        RELATED VIDEOS STYLE 
+*/
+
+.side-section{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    float: right; 
+    padding: 60px 10px;
+}
+
+
+.related-videos {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.related-videos-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.related-videos-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.related-videos-list li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+.related-videos-list li img {
+    width: 150px;
+    height: 84px;
+    margin-right: 1rem;
+}
+.related-video-info {
+    flex: 1;
+}
+.related-video-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.related-video-author {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+.related-video-views {
+    font-size: 1rem;
+    color: #888;
+}
 
 @media only screen and (max-width: 800px) {
     .main-nav {
@@ -91,6 +153,12 @@ a {
     .video-title {
         font-size: 1.7rem;
         margin-bottom: 1rem;
+    }
+    .side-section{
+        padding: 5px 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 }
 
